@@ -82,3 +82,11 @@ Route::get('/articles/blogs/{article}', function ($slug) {
 // Route::get('fadli', function(){
 //     return view('quiz');
 // });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
